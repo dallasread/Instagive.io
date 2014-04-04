@@ -1,3 +1,4 @@
-name: Your New Jekyll Site
-markdown: redcarpet
-pygments: true
+name: Instagive.io
+url: http://blog.instagive.io
+permalink: /:year/:month/:title
+future: false
