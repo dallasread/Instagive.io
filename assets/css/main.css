@@ -3,7 +3,65 @@ body {
 	background: #fafafa;
 }
 
-#topbar {
+img {
+	max-width: 100%;
+}
+
+.container {
+	width: 100%;
+	max-width: 1146px;
+	margin: 0 auto;
+}
+
+.container.wide {
+	max-width: 1500px;
+}
+
+.full_width {
+	width: 100%;
+	max-width: auto;
+}
+
+.banner {
+	min-height: 500px;
+}
+
+.blue {
+	background: #489dce;
+	background: -webkit-linear-gradient(#489dce,#1272ac);
+	background: -moz-linear-gradient(#489dce,#1272ac);
+	background: -o-linear-gradient(#489dce,#1272ac);
+	background: -ms-linear-gradient(#489dce,#1272ac);
+	background: linear-gradient(#489dce,#1272ac);	
+}
+
+.gray {
+	background: #aaa;
+	background: -webkit-linear-gradient(#aaa,#777);
+	background: -moz-linear-gradient(#aaa,#777);
+	background: -o-linear-gradient(#aaa,#777);
+	background: -ms-linear-gradient(#aaa,#777);
+	background: linear-gradient(#aaa,#777);	
+}
+
+.orange {
+	background: #D56C32;
+	background: -webkit-linear-gradient(#D56C32,#EB5F0D);
+	background: -moz-linear-gradient(#D56C32,#EB5F0D);
+	background: -o-linear-gradient(#D56C32,#EB5F0D);
+	background: -ms-linear-gradient(#D56C32,#EB5F0D);
+	background: linear-gradient(#D56C32,#EB5F0D);	
+}
+
+.banner img {
+	margin-bottom: -2px;
+}
+
+.nav_placeholder .topbar {
+	position: static !important;
+}
+
+.topbar {
 	background: #fff;
 	position: fixed;
 	left: 0;
@@ -12,11 +70,11 @@ body {
 	border-bottom: 1px solid #ddd;
 }
 
-#topbar .nav li {
+.topbar .nav li {
 	float: left;
 }
 
-#topbar .nav li a {
+.topbar .nav li a {
 	padding: 25px 15px;
 	font-size: 12px;
 	text-decoration: none;
@@ -27,27 +85,28 @@ body {
 	color: #777;
 }
 
-#topbar .nav li a.selected {
+.topbar .nav li a.selected {
 	background: #fafafa;
+	color: #1272ac;
 }
 
-#topbar .nav_right li a {
+.topbar .nav_right li a {
 	border-left: 1px solid #ddd;
 }
 
-#topbar .nav_left li a {
+.topbar .nav_left li a {
 	border-right: 1px solid #ddd;
 }
 
-#topbar .nav li a:hover {
+.topbar .nav li a:hover {
 	background: #fafafa;
 }
 
-#topbar #logo img {
-	height: 35px;
+.topbar #logo img {
+	width: 124px;
 }
 
-#topbar #logo a {
+.topbar #logo a {
 	padding: 13px 20px;
 }
 
@@ -57,4 +116,8 @@ body {
 
 .float_right {
 	float: right;
+}
+
+.clear {
+	clear: both;
 }
