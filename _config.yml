@@ -1,4 +1,21 @@
 name: Instagive.io
-url: http://blog.instagive.io
+url: http://blog.instagive.io/
 permalink: /:year/:month/:title
 future: false
+nav_left:
+- text: For Givers
+  url: /givers/index.html
+  permalink: /givers
+- text: For Organizations
+  url: /organizations/index.html
+  permalink: /organizations
+- text: Customers
+  url: /customers/index.html
+  permalink: /customers
+nav_right:
+- text: Help
+  url: /help/index.html
+  permalink: /help
+- text: Sign In
+  url: https://instagive.io
+  permalink: https://instagive.io

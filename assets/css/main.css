@@ -1,0 +1,60 @@
+body {
+	font-family: Helvetica Neue, Helvetica, Arial;
+	background: #fafafa;
+}
+
+#topbar {
+	background: #fff;
+	position: fixed;
+	left: 0;
+	top: 0;
+	right: 0;
+	border-bottom: 1px solid #ddd;
+}
+
+#topbar .nav li {
+	float: left;
+}
+
+#topbar .nav li a {
+	padding: 25px 15px;
+	font-size: 12px;
+	text-decoration: none;
+	display: inline-block;
+	font-weight: normal;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #777;
+}
+
+#topbar .nav li a.selected {
+	background: #fafafa;
+}
+
+#topbar .nav_right li a {
+	border-left: 1px solid #ddd;
+}
+
+#topbar .nav_left li a {
+	border-right: 1px solid #ddd;
+}
+
+#topbar .nav li a:hover {
+	background: #fafafa;
+}
+
+#topbar #logo img {
+	height: 35px;
+}
+
+#topbar #logo a {
+	padding: 13px 20px;
+}
+
+.float_left {
+	float: left;
+}
+
+.float_right {
+	float: right;
+}
