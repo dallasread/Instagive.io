@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>{{ page.title }} - Instagive.io</title>
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="/assets/css/reset.css">
+        <link rel="stylesheet" href="/assets/css/main.css">
+        <script src="/assets/js/turbolinks.js"></script>
+    </head>
+    <body>
+      
+      <div class="nav_placeholder">{% include nav.html %}</div>
+      {% include nav.html %}
+
+      <div class="container">
+        {{ content }}
+      </div>
+
+    </body>
+</html>
