@@ -224,7 +224,7 @@ h2 {
 	border-bottom: 10px solid #ddd;
 }
 
-#posts .post.excerpt {
+#post .post.excerpt, #posts .post.excerpt {
   &:first-child {
     padding-top: 0px;
   }
