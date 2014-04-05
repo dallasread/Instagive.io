@@ -87,7 +87,6 @@ img {
   display: inline-block;
   font-weight: normal;
   text-transform: uppercase;
-  font-weight: bold;
   color: #777; }
 .topbar .nav li a.selected {
   background: #fafafa;
@@ -101,7 +100,7 @@ img {
 .topbar #logo img {
   width: 124px; }
 .topbar #logo a {
-  padding: 13px 28px; }
+  padding: 13px 28px 12px; }
 
 .float_left {
   float: left; }
