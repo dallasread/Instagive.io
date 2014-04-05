@@ -14,6 +14,8 @@ nav_left:
 # - text: Tour
 #   url: /tour/index.html
 #   permalink: /tour
+sass:
+  style: :compressed
 nav_right:
 - text: Blog
   url: /blog/index.html

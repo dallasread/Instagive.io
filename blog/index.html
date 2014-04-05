@@ -1,0 +1,36 @@
+---
+layout: default
+title: Hot Off the Press
+description: This is the description
+author: rdr
+---
+
+</div>
+
+<div class="full_width">
+  <div class="banner white_blue wide">
+    
+    <div class="container">
+      
+      <h1>{{ page.title }}</h1>
+      <h2>{{ page.description }}</h2>
+  
+      <div class="content_box">
+        <div id="posts" class="yield">
+          {% for post in site.posts %}          
+            {% include excerpt.html %}
+          {% endfor %}
+        </div>
+        
+        <div id="right_sidebar">
+          {% include latest_posts.html %}
+        </div>
+        
+        <div class="clear"></div>
+      </div>
+    
+    </div>
+    
+  </div>
+</div>
+  
