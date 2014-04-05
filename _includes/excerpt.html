@@ -1,0 +1,16 @@
+{% assign author = site.authors[post.author] %}
+<div class="post excerpt">
+  <div class="author">
+    <div class="avatar" style="background-image: url(/assets/profiles/{{ post.author }}.jpg); "></div>
+    <span class="name">{{ author.name }}</span>
+    <span class="position">{{ author.position }}</span>
+  </div>
+
+  <div class="details">
+    <a href="{{ post.url }}" class="title">{{ post.title }}</a>
+    <span class="date">Published on {{ post.date | date_to_string }}</span>
+    <div class="excerpt">{{ post.content | split: '<!-- more -->' | first }}</div>
+  </div>
+  
+  <div class="clear"></div>
+</div>

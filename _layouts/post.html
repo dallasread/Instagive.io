@@ -1,9 +1,32 @@
 ---
 layout: default
 ---
-<h2>{{ page.title }}</h2>
-<p class="meta">{{ page.date | date_to_string }}</p>
 
-<div class="post">
-{{ content }}
+{% assign post = page %}
 </div>
+
+<div class="full_width">
+  <div class="banner white_blue wide">
+    
+    <div class="container">
+      
+      <h1>{{ page.title }}</h1>
+      <h2>{{ page.description }}</h2>
+  
+      <div class="content_box">
+        <div id="post" class="yield">
+          {% include excerpt.html %}
+        </div>
+        
+        <div id="right_sidebar">
+          {% include latest_posts.html %}
+        </div>
+        
+        <div class="clear"></div>
+      </div>
+    
+    </div>
+    
+  </div>
+</div>
+  

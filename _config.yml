@@ -1,17 +1,19 @@
 name: Instagive.io
-url: http://blog.instagive.io/
 permalink: /:year/:month/:title
 future: false
 nav_left:
-- text: For Organizations
-  url: /organizations/index.html
-  permalink: /organizations
-- text: For Givers
-  url: /givers/index.html
-  permalink: /givers
-- text: Customers
-  url: /customers/index.html
-  permalink: /customers
+# - text: For Organizations
+#   url: /organizations/index.html
+#   permalink: /organizations
+# - text: For Givers
+#   url: /givers/index.html
+#   permalink: /givers
+# - text: Customers
+#   url: /customers/index.html
+#   permalink: /customers
+# - text: Tour
+#   url: /tour/index.html
+#   permalink: /tour
 nav_right:
 - text: Blog
   url: /blog/index.html
@@ -19,3 +21,10 @@ nav_right:
 - text: Sign In
   url: https://instagive.io
   permalink: https://instagive.io
+authors:
+  rdr:
+    name: Dallas Read
+    position: Developer
+  npj:
+    name: Nathan Jansen
+    position: Marketing
