@@ -10,12 +10,8 @@
 		if $(".sidebar").length
 			height = $(".yield").height() + 60
 			$(".sidebar").height height
-
-	load: ->
-		ig.setPageDimensions()
-
-$ ->
-	$(window).scroll ->
+	
+	setAvatar: ->
 		if $("#post").length
 			scrolled = $(window).scrollTop()
 			padding = 30
@@ -26,5 +22,13 @@ $ ->
 			else
 				$("#post .author").removeClass("fixed").css
 					top: "auto"
+
+	load: ->
+		ig.setPageDimensions()
+
+$ ->
+	$(window).scroll ig.setAvatar
+	$(window).resize ig.setPageDimensions
+		
 
 document.addEventListener "page:change", ig.load

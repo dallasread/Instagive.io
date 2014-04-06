@@ -11,13 +11,7 @@
         return $(".sidebar").height(height);
       }
     },
-    load: function() {
-      return ig.setPageDimensions();
-    }
-  };
-
-  $(function() {
-    return $(window).scroll(function() {
+    setAvatar: function() {
       var padding, scrolled;
       if ($("#post").length) {
         scrolled = $(window).scrollTop();
@@ -32,7 +26,15 @@
           });
         }
       }
-    });
+    },
+    load: function() {
+      return ig.setPageDimensions();
+    }
+  };
+
+  $(function() {
+    $(window).scroll(ig.setAvatar);
+    return $(window).resize(ig.setPageDimensions);
   });
 
   document.addEventListener("page:change", ig.load);

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
+title:  Welcome to this super long blog post title for kicks
 date:   2014-04-04 09:10:45
 categories: jekyll update
 author: rdr
