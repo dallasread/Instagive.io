@@ -1,11 +1,21 @@
-<ul>
-  {% for post in site.posts limit:10 %}          
-    <li>
-      <a href="{{ post.url }}">
-        <span class="title">{{ post.title }}</span>
-        <span class="date">{{ post.date | date_to_string }}</span>
-        <span class="author">{{ site.authors[post.author].name }}</span>
-      </a>
-    </li>
-  {% endfor %}
-</ul>
+<div class="widget">
+  <h3>Latest Posts</h3>
+  <ul class="latest_posts">
+    {% for post in site.posts limit:6 %}   
+      {% assign selected = nil %}
+      {% if page.url == post.url %}
+        {% assign selected = 'selected' %}
+      {% endif %}
+       
+      <li>
+        <a href="{{ post.url }}" class="{{ selected }}">
+          <span class="title">
+            <span class="arrow">&raquo;</span>
+            {{ post.title }}
+          </span><br>
+          <span class="byline">By {{ site.authors[post.author].name }} on {{ post.date | date_to_string }}</span>
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
+</div>

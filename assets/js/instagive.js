@@ -1,9 +1,14 @@
 (function() {
   this.ig = {
     setPageDimensions: function() {
+      var height;
       if ($("#post").length) {
         ig.avatar_offset = $("#post .avatar").offset().top;
-        return ig.topbar_height = $(".topbar").height();
+        ig.topbar_height = $(".topbar").height();
+      }
+      if ($(".sidebar").length) {
+        height = $(".yield").height() + 60;
+        return $(".sidebar").height(height);
       }
     },
     load: function() {
