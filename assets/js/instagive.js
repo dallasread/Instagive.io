@@ -35,6 +35,7 @@
   };
 
   $(function() {
+    setTimeout(ig.setPageDimensions, 1500);
     $(window).scroll(ig.setAvatar);
     return $(window).resize(ig.setPageDimensions);
   });

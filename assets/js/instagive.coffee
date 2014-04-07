@@ -31,6 +31,7 @@
 		ig.setPageDimensions()
 
 $ ->
+	setTimeout ig.setPageDimensions, 1500
 	$(window).scroll ig.setAvatar
 	$(window).resize ig.setPageDimensions
 		
