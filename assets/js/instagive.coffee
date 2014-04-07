@@ -3,6 +3,8 @@
 
 @ig =
 	setPageDimensions: ->
+		ig.mobile = $(window).width() < 600
+
 		if $("#post").length
 			ig.avatar_offset = $("#post .avatar").offset().top
 			ig.topbar_height = $(".topbar").height()
@@ -10,6 +12,8 @@
 		if $(".sidebar").length
 			height = $(".yield").height() + 60
 			$(".sidebar").height height
+		
+		$(window).scroll()
 	
 	setAvatar: ->
 		if $("#post").length

@@ -1,0 +1,31 @@
+<div class="clear"></div>
+
+<div class="footer">
+  
+  <div class="container">
+  
+    <ul class="nav nav_right float_left">
+      
+      <li><a href="/" class="{% if page.url == "/index.html" %}selected{% endif %}">What is Instagive.io?</a></li>
+      
+      {% for link in site.nav_right %}
+        {% assign selected = nil %}
+        {% if page.url == link.url %}
+          {% assign selected = 'selected' %}
+        {% endif %}
+
+        <li>
+          <a class="{{ selected }}" href="{{ link.permalink }}">{{ link.text }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+    
+    <p class="copyright float_right">
+      &copy; 2014 Instagive.io.
+    </p>
+    
+  </div>
+  
+  <div class="clear"></div>
+
+</div>
