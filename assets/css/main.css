@@ -226,6 +226,8 @@ img {
   line-height: 60px;
   margin-bottom: 25px;
   text-align: center; }
+.post h1 a {
+  color: #333; }
 .post h2 {
   text-align: center;
   color: #333;

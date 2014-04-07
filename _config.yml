@@ -1,4 +1,5 @@
 name: Instagive.io
+markdown: kramdown
 permalink: /:year/:month/:title
 future: false
 nav_left:
