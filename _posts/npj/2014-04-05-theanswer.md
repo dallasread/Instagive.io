@@ -3,7 +3,7 @@ layout: post
 title:  The Answer
 date:   2014-04-05 
 tags: Jekyll Update
-author: rdr
+author: npj
 location: Ottawa, ON
 ---
 
