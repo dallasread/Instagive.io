@@ -3,7 +3,7 @@ layout: post
 title:  The Start of Something New
 date:   2014-04-04 09:10:45
 tags: Jekyll Update
-author: rdr
+author: npj
 location: Cole Harbour, NS
 ---
 
