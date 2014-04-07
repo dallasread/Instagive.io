@@ -330,6 +330,10 @@ img {
 		}
   }
 	
+	a {
+		color: #1272ac;
+	}
+	
   .content {
     display: block;
     font-size: 17px;
@@ -390,7 +394,7 @@ img {
 	text-align: right;
 }
 
-.button {
+a.button, .button {
 	font-family: Helvetica Neue, Helvetica, Arial, Sans Serif;
 	text-decoration: none;
 	color: #fff;

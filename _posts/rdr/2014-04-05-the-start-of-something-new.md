@@ -21,15 +21,10 @@ With your customized mobile app, your members will be able to give anywhere, any
 
 They will be able to set up one-time and recurring donations from their debit or credit cards. Also, an admin area where you or your staff could review transactions and issue tax receipts is included.
 
-If you're interested in more information, have a peek at our brochure:
+If you're interested in more information, have a peek at our brochure (or [Download the PDF](https://instagive.io/resources/InstagiveBrochure.pdf "Download the PDF")):
+
 ![Instagive Pricing Brochure](https://instagive.io/imgs/Instagive.jpg "Instagive Pricing Brochure")
 
 Nathan and I are just crazy enough to think that you’ll even be able to increase how much people give to your church (which is good for giver & receiver).
 
 We'll send you more information on how to sign up (quick & painless 7 minute process) when we launch the product in the coming weeks.
-
-Thanks,
-
-Dallas Read & Nathan Jansen
-dallas@instagive.ca
-nathan@instagive.ca

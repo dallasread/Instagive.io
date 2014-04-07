@@ -252,6 +252,8 @@ img {
   margin-bottom: 15px; }
 .post h5.date {
   margin-top: -10px; }
+.post a {
+  color: #1272ac; }
 .post .content {
   display: block;
   font-size: 17px;
@@ -289,7 +291,7 @@ img {
 .align_right {
   text-align: right; }
 
-.button {
+a.button, .button {
   font-family: Helvetica Neue, Helvetica, Arial, Sans Serif;
   text-decoration: none;
   color: #fff;
