@@ -51,6 +51,41 @@ img {
 	left: 0;
 	right: 0;
 	z-index: -1;
+	
+	&.static {
+		position: static;
+		height: auto;
+	}
+	
+	&[data-banner="home"] {
+		padding: 50px 100px 0px;
+		padding-bottom: 20px;
+
+		h1 {
+			margin-top: 150px;
+			font-weight: bold;
+			color: #fff;
+			text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+			font-size: 28px;
+			line-height: 38px;
+			width: 50%;
+		}
+	
+		h2 {
+			width: 50%;
+			color: rgba(255, 255, 255, 0.8);
+			text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+			font-size: 17px;
+			line-height: 30px;
+			margin-top: 20px;
+		}
+	
+		img {
+			margin-top: -150px;
+			float: right;
+			display: inline-block;
+		}
+	}
 }
 
 .blue_white {
@@ -98,11 +133,6 @@ img {
   background: linear-gradient(#d56c32, #eb5f0d);
 }
 
-.banner img {
-  margin-bottom: -2px;
-  padding-top: 100px;
-}
-
 .nav_placeholder .topbar {
   position: static !important;
 }
@@ -115,6 +145,8 @@ img {
   right: 0;
   border-bottom: 1px solid #ddd;
 	z-index: 99;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
   .nav li {
     float: left;
     a {
@@ -142,7 +174,7 @@ img {
   }
   #logo {
     img {
-      width: 124px;
+      width: 130px;
     }
   }
 }
@@ -236,7 +268,7 @@ img {
   clear: both;
   .author {
 		position: absolute;
-    width: 150px;
+    width: 156px;
     float: left;
     font-family: Helvetica Neue, Helvetica, Arial, Sans Serif;
 		text-align: right;
@@ -267,7 +299,7 @@ img {
     float: left;
     width: 77%;
     border-left: 1px solid #ddd;
-		margin-left: 150px;
+		margin-left: 156px;
   }
 }
 

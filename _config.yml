@@ -21,9 +21,9 @@ nav_right:
 - text: Blog
   url: /blog/index.html
   permalink: /blog
-- text: Sign In
-  url: https://instagive.io
-  permalink: https://instagive.io
+- text: Sign Up
+  url: https://instagive.io/organizations/new
+  permalink: https://instagive.io/organizations/new
 authors:
   rdr:
     name: Dallas Read

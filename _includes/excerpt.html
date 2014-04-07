@@ -13,9 +13,13 @@
     <h5 class="date">{{ post.location }} &nbsp; &mdash; &nbsp; {{ post.date | date_to_string }}</h5>
     {% if include.style == "excerpt" %}
       <div class="content">{{ post.content | split: "<!-- more -->" | first }}</div>
-      <div class="align_right">
-        <a href="{{ post.url }}" class="read_more button button_blue small">Read more &nbsp; &rarr;</a>
-      </div>
+      
+      {% assign more = post.content | split: "<!-- more -->" | size %}
+      {% if more != 1 %}
+        <div class="align_right">
+          <a href="{{ post.url }}" class="read_more button button_blue small">Read more &nbsp; &rarr;</a>
+        </div>
+      {% endif %}
     {% else %}
       <div class="content">{{ post.content | markdownify }}</div>
     {% endif %}

@@ -1,10 +1,10 @@
 ---
-layout: post
-title:  The Start of Something New
-date:   2014-04-05 09:10:45
-tags: Jekyll Update
-author: rdr
-location: Cole Harbour, NS
+layout:     post
+title:      The Start of Something New
+date:       2014-04-05 09:00:00
+tags:       Feature 
+author:     rdr
+location:   Cole Harbour, NS
 ---
 
 Nathan Jansen and I have collaborated to simplify church giving. Talking with a few of our peers, here's what we've found:
