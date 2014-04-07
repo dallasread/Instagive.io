@@ -18,7 +18,7 @@ To get our peers and churches giving again, we're building a new tool for them t
 <!-- more -->
 
 
-### Receive donations in your sleep!
+#### Receive donations in your sleep!
 With your customized mobile app, your members will be able to give anywhere, any time.
 
 They will be able to set up one-time and recurring donations from their debit or credit cards. Also, an admin area where you or your staff could review transactions and issue tax receipts is included.
