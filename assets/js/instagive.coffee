@@ -4,35 +4,64 @@
 @ig =
 	setPageDimensions: ->
 		ig.mobile = $(window).width() < 600
+		ig.topbar_height = $(".topbar").height()
 
 		if $("#post").length
 			ig.avatar_offset = $("#post .avatar").offset().top
-			ig.topbar_height = $(".topbar").height()
 		
 		if $(".sidebar").length
 			height = $(".yield").height() + 60
 			$(".sidebar").height height
+			
+		if $("#pricing").length
+			$("#pricing th").each ->
+				$(this).css "width", $(this).width()
 		
 		$(window).scroll()
 	
-	setAvatar: ->
+	setAvatar: (scrolled) ->
 		if $("#post").length
-			scrolled = $(window).scrollTop()
 			padding = 30
+			content_top_border_height = 15
 		
-			if ig.avatar_offset < scrolled + ig.topbar_height + 30
+			if ig.avatar_offset < scrolled + ig.topbar_height + content_top_border_height
 				$("#post .author").addClass("fixed").css
-					top: ig.topbar_height + 30
+					top: ig.topbar_height + content_top_border_height
 			else
 				$("#post .author").removeClass("fixed").css
 					top: "auto"
+	
+	setPricingHeader: (scrolled) ->
+		if $("#pricing_placeholder").length
+			placeholder = $("#pricing").offset().top
+
+			if scrolled + ig.topbar_height < placeholder - 48
+				$("#pricing_placeholder").hide()
+				$("#pricing").removeClass "fixed_header"
+			else if scrolled + ig.topbar_height > placeholder
+				$("#pricing_placeholder").show()
+				$("#pricing").addClass "fixed_header"
+	
+	scroll: ->
+		scrolled = $(window).scrollTop()
+		ig.setAvatar scrolled
+		ig.setPricingHeader scrolled
+		
 
 	load: ->
 		ig.setPageDimensions()
 
+$(document).on
+	mouseenter: ->
+		index = $(this).index() + 1
+		$("#pricing").find("td:nth-child(#{index}):not(.trait)").addClass("hover")
+	mouseleave: ->
+		$("#pricing").find(".hover").removeClass("hover")
+, "#pricing th, #pricing td"
+
 $ ->
 	setTimeout ig.setPageDimensions, 1500
-	$(window).scroll ig.setAvatar
+	$(window).scroll ig.scroll
 	$(window).resize ig.setPageDimensions
 		
 

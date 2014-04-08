@@ -18,12 +18,15 @@ nav_left:
 sass:
   style: :compressed
 nav_right:
+- text: Pricing
+  url: /
+  permalink: /#!/pricing
 - text: Blog
   url: /blog/index.html
   permalink: /blog
-- text: Sign Up
-  url: https://instagive.io/organizations/new
-  permalink: https://instagive.io/organizations/new
+- text: Sign In
+  url: https://instagive.io/users/sign-in
+  permalink: https://instagive.io/users/sign-in
 authors:
   rdr:
     name: Dallas Read

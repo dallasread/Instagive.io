@@ -4,24 +4,15 @@
   
     <ul class="nav nav_right float_left">
       
-      <li><a href="/" class="{% if page.url == "/index.html" %}selected{% endif %}">What is Instagive.io?</a></li>
+      <li><a href="/" class="{% if page.url == "/index.html" %}selected{% endif %}">Why Instagive.io?</a></li>
       
-      <li><a href="https://instagive.io/resources/InstagiveBrochure.pdf">Download the Brochure</a></li>
-      
-      {% for link in site.nav_right %}
-        {% assign selected = nil %}
-        {% if page.url == link.url %}
-          {% assign selected = 'selected' %}
-        {% endif %}
-
-        <li>
-          <a class="{{ selected }}" href="{{ link.permalink }}">{{ link.text }}</a>
-        </li>
-      {% endfor %}
+      <li><a href="https://instagive.io/resources/InstagiveBrochure.pdf">Brochure (PDF)</a></li>
+      <li><a href="/blog" class="{% if page.url == "/blog/index.html" %}selected{% endif %}">Blog</a></li>
+      <li><a href="mailto:dallas@instagive.io">Contact Us</a></li>
     </ul>
     
     <p class="copyright float_right">
-      &copy; 2014 Instagive.io.
+      &copy; 2014 Instagive.io. <a href="http://iconleak.com">Thanks, Icons</a>.
     </p>
     
   </div>
