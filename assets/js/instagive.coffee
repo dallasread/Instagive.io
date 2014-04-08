@@ -12,7 +12,7 @@
 		
 		if $(".sidebar").length
 			height = $(".yield").height() + 60
-			$(".sidebar").height height
+			$(".sidebar").css "height", height
 			
 		if $("#pricing").length
 			$("#pricing th").each ->
@@ -52,6 +52,7 @@
 
 	load: ->
 		ig.setPageDimensions()
+		ig.setPricingHeader 0
 
 $(document).on
 	mouseenter: ->
@@ -62,7 +63,7 @@ $(document).on
 , "#pricing th, #pricing td"
 
 $ ->
-	setTimeout ig.setPageDimensions, 1500
+	setTimeout ig.setPageDimensions, 700
 	$(window).scroll ig.scroll
 	$(window).resize ig.setPageDimensions
 		

@@ -15,9 +15,11 @@
     <h5 class="date">{{ post.location }} &nbsp; &mdash; &nbsp; {{ post.date | date_to_string }}</h5>
     
     {% if include.style == "single" %}
-      <div class="align_center">
-        <img src="{{ post.img }}" class="featured_img">
-      </div>
+      {% if post.img %}
+        <div class="align_center">
+          <img src="{{ post.img }}" class="featured_img">
+        </div>
+      {% endif %}
     {% endif %}
     
     {% if include.style == "excerpt" %}

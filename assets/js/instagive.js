@@ -10,7 +10,7 @@
       }
       if ($(".sidebar").length) {
         height = $(".yield").height() + 60;
-        $(".sidebar").height(height);
+        $(".sidebar").css("height", height);
       }
       if ($("#pricing").length) {
         $("#pricing th").each(function() {
@@ -57,7 +57,8 @@
       }
     },
     load: function() {
-      return ig.setPageDimensions();
+      ig.setPageDimensions();
+      return ig.setPricingHeader(0);
     }
   };
 
@@ -73,7 +74,7 @@
   }, "#pricing th, #pricing td");
 
   $(function() {
-    setTimeout(ig.setPageDimensions, 1500);
+    setTimeout(ig.setPageDimensions, 700);
     $(window).scroll(ig.scroll);
     return $(window).resize(ig.setPageDimensions);
   });

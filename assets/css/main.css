@@ -93,13 +93,13 @@ img {
   text-align: center; }
 .banner[data-banner="process"] #three_steps li img {
   width: 180px;
-  margin-bottom: 40px; }
+  margin-bottom: 50px; }
 .banner[data-banner="process"] #three_steps li .caption {
   text-align: left;
   font-weight: bold;
-  font-size: 21px;
-  line-height: 28px;
-  margin-bottom: 20px;
+  font-size: 18px;
+  line-height: 26px;
+  margin-bottom: 10px;
   color: #333; }
 .banner[data-banner="process"] #three_steps li .description {
   text-align: left;
@@ -132,6 +132,10 @@ img {
   font-weight: bold; }
 .banner[data-banner="pricing"] .final_banner_object .button {
   margin-top: -12px; }
+.banner[data-banner="pricing"] .table_footnote {
+  margin-top: 10px;
+  color: #777;
+  font-size: 11px; }
 .banner[data-banner="pricing"] table {
   margin: 0 auto;
   width: 100%;
@@ -143,16 +147,20 @@ img {
 .banner[data-banner="pricing"] table.fixed_header thead th {
   border-top: 0; }
 .banner[data-banner="pricing"] table th {
-  font-size: 13px;
+  font-size: 12px;
   font-weight: bold;
-  padding: 17px 10px;
+  padding: 17px 0px;
   color: #fff;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); }
 .banner[data-banner="pricing"] table td {
   font-size: 13px;
   line-height: 19px;
   padding: 12px;
-  background: #fff; }
+  background: #fff;
+  color: #333; }
+.banner[data-banner="pricing"] table td.highlight {
+  color: #208C0C;
+  font-weight: bold; }
 .banner[data-banner="pricing"] table td.trait {
   text-align: left; }
 .banner[data-banner="pricing"] table td.trait p {
@@ -175,9 +183,9 @@ img {
   display: block;
   margin: -10px auto; }
 .banner[data-banner="pricing"] table td.provider, .banner[data-banner="pricing"] table th.provider {
-  width: 12%; }
+  width: 10%; }
 .banner[data-banner="pricing"] table td.descriptor, .banner[data-banner="pricing"] table th.descriptor {
-  width: 25%; }
+  width: 20%; }
 .banner .final_banner_object {
   margin-top: 40px;
   margin-bottom: 40px; }
