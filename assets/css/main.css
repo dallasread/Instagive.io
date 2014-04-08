@@ -183,7 +183,7 @@ img {
   display: block;
   margin: -10px auto; }
 .banner[data-banner="pricing"] table td.provider, .banner[data-banner="pricing"] table th.provider {
-  width: 10%; }
+  width: 13%; }
 .banner[data-banner="pricing"] table td.descriptor, .banner[data-banner="pricing"] table th.descriptor {
   width: 20%; }
 .banner .final_banner_object {

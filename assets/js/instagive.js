@@ -13,7 +13,7 @@
         $(".sidebar").css("height", height);
       }
       if ($("#pricing").length) {
-        $("#pricing th").each(function() {
+        $("#pricing th, #pricing td").each(function() {
           return $(this).css("width", $(this).width());
         });
       }

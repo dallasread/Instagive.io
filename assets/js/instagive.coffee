@@ -15,7 +15,7 @@
 			$(".sidebar").css "height", height
 			
 		if $("#pricing").length
-			$("#pricing th").each ->
+			$("#pricing th, #pricing td").each ->
 				$(this).css "width", $(this).width()
 		
 		$(window).scroll()
