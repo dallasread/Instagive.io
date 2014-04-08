@@ -3,7 +3,8 @@
 
 @ig =
 	setPageDimensions: ->
-		ig.mobile = $(window).width() < 600
+		ig.window_width = $(window).width()
+		ig.mobile = ig.window_width < 600
 		ig.topbar_height = $(".topbar").height()
 
 		if $("#post").length
@@ -43,9 +44,10 @@
 				$("#pricing").addClass "fixed_header"
 	
 	scroll: ->
-		scrolled = $(window).scrollTop()
-		ig.setAvatar scrolled
-		ig.setPricingHeader scrolled
+		if ig.window_width > 600
+			scrolled = $(window).scrollTop()
+			ig.setAvatar scrolled
+			ig.setPricingHeader scrolled
 		
 
 	load: ->

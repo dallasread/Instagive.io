@@ -2,7 +2,8 @@
   this.ig = {
     setPageDimensions: function() {
       var height;
-      ig.mobile = $(window).width() < 600;
+      ig.window_width = $(window).width();
+      ig.mobile = ig.window_width < 600;
       ig.topbar_height = $(".topbar").height();
       if ($("#post").length) {
         ig.avatar_offset = $("#post .avatar").offset().top;
@@ -49,9 +50,11 @@
     },
     scroll: function() {
       var scrolled;
-      scrolled = $(window).scrollTop();
-      ig.setAvatar(scrolled);
-      return ig.setPricingHeader(scrolled);
+      if (ig.window_width > 600) {
+        scrolled = $(window).scrollTop();
+        ig.setAvatar(scrolled);
+        return ig.setPricingHeader(scrolled);
+      }
     },
     load: function() {
       return ig.setPageDimensions();

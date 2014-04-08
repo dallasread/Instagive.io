@@ -11,6 +11,8 @@ We've launched Instagive.io to give charities and non-profits a place where they
 
 Instagive.io's cloud-based payments infrastructure relieves non-profits of the cost and complexity of maintaining custom payment systems. We provide reliable debit & credit card processing, receipt generation, recurring donations, and real-time analytics.
 
+<!-- more -->
+
 If you're interested in more information, have a peek at our brochure (or [Download the PDF](https://instagive.io/resources/InstagiveBrochure.pdf "Download the PDF")):
 
 Ultimately, our goal is bigger:
