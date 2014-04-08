@@ -136,9 +136,10 @@ img {
 				.caption {
 					text-align: left;
 					font-weight: bold;
-					font-size: 24px;
-					line-height: 32px;
+					font-size: 21px;
+					line-height: 28px;
 					margin-bottom: 20px;
+					color: #333;
 				}
 				
 				.description {
@@ -529,6 +530,7 @@ img {
       height: 120px;
       border-radius: 75px;
       box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3);
+			margin: 0 auto;
     }
     .name {
       display: block;
@@ -764,13 +766,13 @@ a.button, .button {
 	}
 }
 
-@media screen and (min-width: 980px) {
+@media screen and (min-width: 880px) {
 	#posts, .post.single .content {
 		min-height: 700px !important;
 	}
 }
 
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 880px) {
 	#right_sidebar {
 		display: none;
 	}
@@ -844,15 +846,23 @@ a.button, .button {
 	  }
 	}
 	
-	.author {
-		display: none;
-	}
-	
 	.content_box {
 		padding: 10px;
 	}
 	
 	.post {
+		.author {
+			display: block;
+			position: static;
+			text-align: center;
+			width: 100%;
+			margin-top: 20px;
+			
+			.name, .position {
+				padding: 0px;
+			}
+		}
+		
 		.content {
 	    font-size: 17px;
 	    line-height: 24px;

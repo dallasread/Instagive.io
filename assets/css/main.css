@@ -97,9 +97,10 @@ img {
 .banner[data-banner="process"] #three_steps li .caption {
   text-align: left;
   font-weight: bold;
-  font-size: 24px;
-  line-height: 32px;
-  margin-bottom: 20px; }
+  font-size: 21px;
+  line-height: 28px;
+  margin-bottom: 20px;
+  color: #333; }
 .banner[data-banner="process"] #three_steps li .description {
   text-align: left;
   font-size: 14px;
@@ -376,7 +377,8 @@ img {
   width: 120px;
   height: 120px;
   border-radius: 75px;
-  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3); }
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3);
+  margin: 0 auto; }
 .post .author .name {
   display: block;
   margin-top: 20px;
@@ -542,10 +544,10 @@ a.button, .button {
 @media screen and (max-width: 1146px) {
   .content_box {
     border-radius: 0; } }
-@media screen and (min-width: 980px) {
+@media screen and (min-width: 880px) {
   #posts, .post.single .content {
     min-height: 700px !important; } }
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 880px) {
   #right_sidebar {
     display: none; }
 
@@ -588,12 +590,17 @@ a.button, .button {
   #logo a {
     padding: 13px; }
 
-  .author {
-    display: none; }
-
   .content_box {
     padding: 10px; }
 
+  .post .author {
+    display: block;
+    position: static;
+    text-align: center;
+    width: 100%;
+    margin-top: 20px; }
+  .post .author .name, .post .author .position {
+    padding: 0px; }
   .post .content {
     font-size: 17px;
     line-height: 24px; }
