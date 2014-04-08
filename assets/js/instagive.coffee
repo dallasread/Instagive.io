@@ -48,7 +48,6 @@
 			scrolled = $(window).scrollTop()
 			ig.setAvatar scrolled
 			ig.setPricingHeader scrolled
-		
 
 	load: ->
 		ig.setPageDimensions()
