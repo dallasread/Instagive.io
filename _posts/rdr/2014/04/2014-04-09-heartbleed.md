@@ -7,7 +7,7 @@ author:     rdr
 location:   Cole Harbour, NS
 ---
 
-Over the past couple days, you've probably heard about Heartbleed - a security vulnerability that has left OpenSSL exposed (about 66% of the internet).
+Over the past couple days, you've probably heard about [Heartbleed](http://heartbleed.com) - a security vulnerability that has left OpenSSL exposed (about 66% of the internet).
 
 #### The hole in the internet
 
