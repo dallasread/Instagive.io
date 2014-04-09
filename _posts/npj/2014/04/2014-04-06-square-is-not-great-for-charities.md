@@ -13,7 +13,7 @@ Square’s primary business model is based around a point of sale, 2.75% pay-per
 
 <!-- more -->
 
-> Square's rate for online and on-the-go payments is actually [3.5%](https://squareup.com/ca/pricing){:target="_blank"}.
+> Square's rate per manual transaction is actually [3.5%](https://squareup.com/ca/pricing){:target="_blank"}.
 
 Although Square’s pay-per-swipe rate may seem appealing, it is important to understand what it  means for your charity or non profit. A pay-per-swipe-transaction means that individuals have to be swiping their cards in person. While this might be great for making payments at your office or church, its not great for:
 
