@@ -13,7 +13,9 @@ Over the past couple days, you've probably heard about [Heartbleed](http://heart
 
 [This mass test](https://github.com/musalbas/heartbleed-masstest/blob/master/top1000.txt){:target="_blank"} shows how many of the top 1,000 websites on the internet were affected. Perhaps most alarming is that half of the top 1,000 sites don't even have SSL installed!
 
-At Instagive.io, even though we're a young company, we take your security very seriously. Our hardware did have a vulnerable version of OpenSSL installed. Within hours of hearing of the vulnerability, we updated our equipment and keys to nullify any risk of future attacks.
+#### Is my Instagive data safe?
+
+Yes. At Instagive.io, even though we're a young company, we take your security very seriously. Our hardware did have a vulnerable version of OpenSSL installed, but no security breaches were uncovered. Within hours of hearing of the vulnerability, we had updated our equipment and keys to nullify any risk of future attacks.
 
 <!-- more -->
 
