@@ -12,7 +12,7 @@ Paypal's great &mdash; if you just need to have a "Donate" button on your websit
 
 For businesses, there are *plenty* of easier-to-use, easier-to-implement options available to receive payments.
 
-For charities, Paypal is more enticing because of their discounted rate for registered organizations ([1.9% + $0.30](https://www.paypal.com/webapps/mpp/merchant-fees){:target="_blank"} in Canada and [1.9% + $0.30](https://www.paypal.com/webapps/mpp/merchant-fees){:target="_blank"} in the US). With all their bartering power as the world leader in online payments since 1998, their rate is hard for anyone to beat. 
+For charities, Paypal is more enticing because of their discounted rate for registered organizations ([1.9% + $0.30](https://www.paypal.com/webapps/mpp/merchant-fees){:target="_blank"} in Canada and [2.2% + $0.30](https://www.paypal.com/webapps/mpp/merchant-fees){:target="_blank"} in the US). With all their bartering power as the world leader in online payments since 1998, their rate is hard for anyone to beat. 
 
 Unless you fully understand their offerings before you commit, choosing Paypal simply because of the low, posted rate could be hazardous down the line. What are they actually offering at this discounted rate?
 
@@ -28,7 +28,7 @@ For $35 per month, Paypal does offer the ability to brand your donation process.
 
 If you've ever used Paypal's back end for administrators, you know that it's archaic and slow to navigate. Given that it was created in 2007 (just 3 years after Facebook launched), this really doesn't come as a surprise.
 
-Over the years, they have amassed the functionality necessary for online payment transactions... they trouble is finding the functionality when you need them.
+Over the years, they have amassed the functionality necessary for online payment transactions... the trouble is finding the functionality when you need it.
 
 In contrast, Instagive.io's back end is easy to navigate - it's one page. There, you can filter your transactions by Donor, Date, and Cause. Our server usually responds in less than 200ms. 
 

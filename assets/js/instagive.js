@@ -36,10 +36,15 @@
       }
     },
     setPricingHeader: function(scrolled) {
-      var placeholder;
+      var placeholder, pricing, thead_height;
       if ($("#pricing_placeholder").length) {
-        placeholder = $("#pricing").offset().top;
-        if (scrolled + ig.topbar_height < placeholder - 48) {
+        pricing = $("#pricing");
+        placeholder = pricing.offset().top;
+        thead_height = 48;
+        if (scrolled + ig.topbar_height > placeholder + pricing.height() - thead_height) {
+          $("#pricing_placeholder").hide();
+          return $("#pricing").removeClass("fixed_header");
+        } else if (scrolled + ig.topbar_height < placeholder - thead_height) {
           $("#pricing_placeholder").hide();
           return $("#pricing").removeClass("fixed_header");
         } else if (scrolled + ig.topbar_height > placeholder) {
