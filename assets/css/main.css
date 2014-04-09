@@ -155,7 +155,7 @@ img {
 .banner[data-banner="pricing"] table td {
   font-size: 13px;
   line-height: 19px;
-  padding: 12px;
+  padding: 12px 7px;
   background: #fff;
   color: #333; }
 .banner[data-banner="pricing"] table td.highlight {

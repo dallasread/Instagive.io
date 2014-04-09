@@ -20,7 +20,9 @@ Unless you fully understand their offerings before you commit, choosing Paypal s
 
 #### 1. No customized app - Pay to customize
 
-Paypal provides their own app for you to send and receive donations, but they don't offer a customized experience with your logo and branding. 
+Paypal provides their own app for you to send and receive donations, but they don't offer a customized experience with your logo and branding.
+
+For $35 per month, Paypal does offer the ability to brand your donation process. The only catch is that all coding and security considerations fall onto your lap at that point.
 
 #### 2. Poor Administrative Tools
 
@@ -40,7 +42,7 @@ To compare, if you [sign up](https://instagive.io/organizations/new) for Instagi
 
 Perhaps its just me, but people seem to shutter when they see a Paypal "Donate Now" button. This is probably because the graphic was designed in 2007 - the web and it's constraints have come a long way since then. Maybe it has something to do with its history of security breaches?
 
-#### 5. Your still need your own infrastructure
+#### 5. You still need your own infrastructure
 
 Above all, you don't want donations to your organization retracted because of its Paypal landing page. So, you'll need to hire a developer and designer to build a custom giving application on your website. To receive payments online, an [SSL Certificate](https://www.symantec.com/verisign/ssl-certificates){:target="_blank"} is required. You'll also need to make sure you're [PCI Compliant](https://www.pcisecuritystandards.org){:target="_blank"}. You'll need to perform [cross-browser](https://www.pcisecuritystandards.org){:target="_blank", [compatibility ](https://en.wikipedia.org/wiki/Software_testing#Compatibility_testing){:target="_blank"}, [load](https://en.wikipedia.org/wiki/Load_testing#Software_load_testing){:target="_blank"} [unit](https://en.wikipedia.org/wiki/Software_testing#Unit_testing){:target="_blank"}, [integration](https://en.wikipedia.org/wiki/Software_testing#Integration_testing){:target="_blank"}, [usability](https://en.wikipedia.org/wiki/Software_testing#Usability_testing){:target="_blank"}, and [acceptance](https://en.wikipedia.org/wiki/Software_testing#Acceptance_testing){:target="_blank"} tests (there's more too!).
 
