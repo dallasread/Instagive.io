@@ -5,6 +5,7 @@ date:       2014-04-09 09:00:00
 tags:       Security
 author:     rdr
 location:   Cole Harbour, NS
+img:        /assets/imgs/posts/2014/04/heartbleed.png
 ---
 
 Over the past couple days, you've probably heard about [Heartbleed](http://heartbleed.com){:target="_blank"} - a security vulnerability that has left OpenSSL exposed (about 66% of the internet).
