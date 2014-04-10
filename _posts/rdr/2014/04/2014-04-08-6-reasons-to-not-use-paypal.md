@@ -30,7 +30,7 @@ If you've ever used Paypal's back end for administrators, you know that it's arc
 
 Over the years, they have amassed the functionality necessary for online payment transactions... the trouble is finding the functionality when you need it.
 
-In contrast, Instagive.io's back end is easy to navigate - it's one page. There, you can filter your transactions by Donor, Date, and Cause. Our server usually responds in less than 200ms. 
+In contrast, Instagive.io's back end is easy to navigate - it's one page. There, you can filter your transactions by Donor, Date, and Cause. Our server usually responds in less than 100ms. 
 
 #### 3. Organization registration hassle
 
