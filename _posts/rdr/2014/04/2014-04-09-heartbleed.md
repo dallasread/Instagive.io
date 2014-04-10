@@ -23,4 +23,4 @@ Yes. At Instagive.io, even though we're a young company, we take your security v
 
 Unfortunately, this issue has to be dealt with by server maintainers. As far as Instagive.io goes, we've done our due diligence.
 
-In general, the surest way to protect yourself is to change your passwords regularly (for all websites).
+In general, the surest way to protect yourself is to change your passwords immediately and regularly (for all websites).
