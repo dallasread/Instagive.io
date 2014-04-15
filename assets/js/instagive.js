@@ -1,16 +1,18 @@
 (function() {
   this.ig = {
-    setPageDimensions: function() {
+    setSidebarHeight: function() {
       var height;
+      if ($(".sidebar").length) {
+        height = $(".yield").height() + 60;
+        return $(".sidebar").css("height", height);
+      }
+    },
+    setPageDimensions: function() {
       ig.window_width = $(window).width();
       ig.mobile = ig.window_width < 600;
       ig.topbar_height = $(".topbar").height();
       if ($("#post").length) {
         ig.avatar_offset = $("#post .avatar").offset().top;
-      }
-      if ($(".sidebar").length) {
-        height = $(".yield").height() + 60;
-        $(".sidebar").css("height", height);
       }
       if ($("#pricing").length) {
         $("#pricing th, #pricing td").each(function() {
@@ -79,7 +81,7 @@
   }, "#pricing th, #pricing td");
 
   $(function() {
-    setTimeout(ig.setPageDimensions, 700);
+    setTimeout(ig.setSidebarHeight, 700);
     $(window).scroll(ig.scroll);
     return $(window).resize(ig.setPageDimensions);
   });

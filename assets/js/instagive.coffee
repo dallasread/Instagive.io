@@ -2,6 +2,11 @@
 ---
 
 @ig =
+	setSidebarHeight: ->
+		if $(".sidebar").length
+			height = $(".yield").height() + 60
+			$(".sidebar").css "height", height
+			
 	setPageDimensions: ->
 		ig.window_width = $(window).width()
 		ig.mobile = ig.window_width < 600
@@ -9,10 +14,6 @@
 
 		if $("#post").length
 			ig.avatar_offset = $("#post .avatar").offset().top
-		
-		if $(".sidebar").length
-			height = $(".yield").height() + 60
-			$(".sidebar").css "height", height
 			
 		if $("#pricing").length
 			$("#pricing th, #pricing td").each ->
@@ -67,9 +68,8 @@ $(document).on
 , "#pricing th, #pricing td"
 
 $ ->
-	setTimeout ig.setPageDimensions, 700
+	setTimeout ig.setSidebarHeight, 700
 	$(window).scroll ig.scroll
 	$(window).resize ig.setPageDimensions
-		
 
 document.addEventListener "page:change", ig.load
