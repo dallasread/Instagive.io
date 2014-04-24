@@ -12,7 +12,9 @@ Generating more income for your church’s cause can sometimes seem like a diffi
 
 When talking with Pastors of all types (Lead, Young Adult, Youth)  we’ve noticed that a common pain point among them is finances. Although many may have the resources needed to put their ministries into action, they struggle in acquiring the finances to facilitate it. 
 
-While we don’t have a magic formula, we do have 5 proven methods that have helped other Pastor’s on their journey to reaching their church’s giving goals.  
+While we don’t have a magic formula, we do have 5 proven methods that have helped other Pastor’s on their journey to reaching their church’s giving goals.
+
+<!-- more -->
 
 ### 1. Make Giving Convenient 
 
