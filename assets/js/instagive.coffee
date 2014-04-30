@@ -59,6 +59,16 @@
 		ig.setPageDimensions()
 		ig.setPricingHeader 0
 
+$(document).on "click", ".show_intro_video", ->
+	$("iframe").attr "src", "//www.youtube.com/embed/i6kkuq5_RtM?theme=light&showinfo=0&autoplay=1"
+	$("#intro_video").show()
+	false
+
+$(document).on "click", "#intro_video", ->
+	$(this).hide()
+	$("iframe").attr "src", ""
+	false
+
 $(document).on
 	mouseenter: ->
 		index = $(this).index() + 1

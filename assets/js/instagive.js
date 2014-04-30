@@ -69,6 +69,18 @@
     }
   };
 
+  $(document).on("click", ".show_intro_video", function() {
+    $("iframe").attr("src", "//www.youtube.com/embed/i6kkuq5_RtM?theme=light&showinfo=0&autoplay=1");
+    $("#intro_video").show();
+    return false;
+  });
+
+  $(document).on("click", "#intro_video", function() {
+    $(this).hide();
+    $("iframe").attr("src", "");
+    return false;
+  });
+
   $(document).on({
     mouseenter: function() {
       var index;

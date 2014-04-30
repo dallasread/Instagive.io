@@ -42,9 +42,8 @@ img {
   position: static;
   height: auto; }
 .banner[data-banner="home"] {
-  padding: 50px 5% 20px; }
+  padding: 10% 5% 10%; }
 .banner[data-banner="home"] h1 {
-  margin-top: 10%;
   font-weight: bold;
   color: #fff;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
@@ -62,10 +61,27 @@ img {
   margin-top: 20px; }
 .banner[data-banner="home"] p .button.translucent {
   margin-left: 20px; }
-.banner[data-banner="home"] img {
-  margin-top: -10%;
+.banner[data-banner="home"] .featured_img {
+  margin-top: -5%;
   float: right;
   display: inline-block; }
+.banner[data-banner="home"] .video_placeholder {
+  display: block;
+  width: 30%;
+  margin: 30px 0; }
+.banner[data-banner="home"] .video_placeholder:hover img {
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+  filter: alpha(opacity=50);
+  -moz-opacity: 0.8;
+  -khtml-opacity: 0.8;
+  opacity: 0.8; }
+.banner[data-banner="home"] .video_placeholder img {
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=95)";
+  filter: alpha(opacity=95);
+  -moz-opacity: 0.6;
+  -khtml-opacity: 0.6;
+  opacity: 0.6;
+  border-radius: 5px; }
 .banner .banner_title {
   font-weight: bold;
   color: #fff;
@@ -234,6 +250,29 @@ img {
   line-height: 20px; }
 .next_pane_prompter a:hover {
   color: rgba(255, 255, 255, 0.7); }
+
+#intro_video {
+  background: #111;
+  background: rgba(0, 0, 0, 0.9);
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: none;
+  text-align: center;
+  z-index: 80; }
+#intro_video .video {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  right: 0;
+  bottom: 0;
+  margin-top: -125px;
+  margin-left: -280px;
+  width: 560px;
+  height: 315px;
+  z-index: 81; }
 
 .white {
   background: #fff; }
@@ -700,6 +739,9 @@ a.button, .button {
     float: none;
     width: 100%;
     padding: 0px 0px 50px; }
+  .banner[data-banner="home"] .video_placeholder {
+    width: 100%;
+    text-align: left; }
   .banner[data-banner="faqs"] {
     padding-top: 50px; }
   .banner[data-banner="faqs"] .faqs {
