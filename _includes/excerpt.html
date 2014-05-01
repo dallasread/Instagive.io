@@ -4,8 +4,8 @@
 
 <div class="post {{ include.style }}">
   <div class="author">
-    <div class="avatar" style="background-image: url(/assets/imgs/profiles/{{ post.author }}.jpg); "></div>
-    <span class="name">{{ author.name }}</span>
+    <div class="avatar" style="background-image: url(/assets/imgs/profiles/{{ author.initials }}.jpg); "></div>
+    <span class="name"><a href="https://plus.google.com/{{ author.plus }}?rel=author">{{ author.name }}</a></span>
     <span class="position">{{ author.position }}</span>
   </div>
 

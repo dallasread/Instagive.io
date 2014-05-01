@@ -647,6 +647,7 @@ img {
       box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3);
 			margin: 0 auto;
     }
+		
     .name {
       display: block;
       margin-top: 20px;
@@ -654,6 +655,7 @@ img {
       color: #333;
 			padding-right: 33px
     }
+		
     .position {
       display: block;
       margin-top: 6px;
@@ -661,6 +663,10 @@ img {
       color: #aaa;
 			padding-right: 33px
     }
+				
+		a {
+			color: inherit;
+		}
   }
   .details {
     padding-left: 30px;

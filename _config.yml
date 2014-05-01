@@ -33,7 +33,11 @@ nav_right:
 authors:
   rdr:
     name: Dallas Read
-    position: Developer 
+    position: Developer
+    plus: +DallasRead
+    initials: rdr
   npj:
     name: Nathan Jansen
     position: Co-Founder
+    plus: 111785943133849515777
+    initials: npj
