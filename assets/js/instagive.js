@@ -7,7 +7,10 @@
         return $(".sidebar").css("height", height);
       }
     },
-    setPageDimensions: function() {
+    setPageDimensions: function(delay) {
+      if (delay == null) {
+        delay = 700;
+      }
       ig.window_width = $(window).width();
       ig.mobile = ig.window_width < 600;
       ig.topbar_height = $(".topbar").height();
@@ -19,7 +22,8 @@
           return $(this).css("width", $(this).width());
         });
       }
-      return $(window).scroll();
+      ig.scroll();
+      return setTimeout(ig.setSidebarHeight, delay);
     },
     setAvatar: function(scrolled) {
       var content_top_border_height, padding;
@@ -64,7 +68,7 @@
       }
     },
     load: function() {
-      ig.setPageDimensions();
+      ig.setPageDimensions(500);
       return ig.setPricingHeader(0);
     }
   };
@@ -93,9 +97,9 @@
   }, "#pricing th, #pricing td");
 
   $(function() {
-    setTimeout(ig.setSidebarHeight, 700);
     $(window).scroll(ig.scroll);
-    return $(window).resize(ig.setPageDimensions);
+    $(window).resize(ig.setPageDimensions(0));
+    return ig.setPageDimensions(700);
   });
 
   document.addEventListener("page:change", ig.load);

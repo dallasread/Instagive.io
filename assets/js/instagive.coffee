@@ -7,19 +7,20 @@
 			height = $(".yield").height() + 60
 			$(".sidebar").css "height", height
 			
-	setPageDimensions: ->
+	setPageDimensions: (delay = 700) ->
 		ig.window_width = $(window).width()
 		ig.mobile = ig.window_width < 600
 		ig.topbar_height = $(".topbar").height()
 
 		if $("#post").length
 			ig.avatar_offset = $("#post .avatar").offset().top
-			
+		
 		if $("#pricing").length
 			$("#pricing th, #pricing td").each ->
 				$(this).css "width", $(this).width()
-		
-		$(window).scroll()
+
+		ig.scroll()
+		setTimeout ig.setSidebarHeight, delay
 	
 	setAvatar: (scrolled) ->
 		if $("#post").length
@@ -56,7 +57,7 @@
 			ig.setPricingHeader scrolled
 
 	load: ->
-		ig.setPageDimensions()
+		ig.setPageDimensions 500
 		ig.setPricingHeader 0
 
 $(document).on "click", ".show_intro_video", ->
@@ -78,8 +79,8 @@ $(document).on
 , "#pricing th, #pricing td"
 
 $ ->
-	setTimeout ig.setSidebarHeight, 700
 	$(window).scroll ig.scroll
-	$(window).resize ig.setPageDimensions
+	$(window).resize ig.setPageDimensions(0)
+	ig.setPageDimensions 700
 
 document.addEventListener "page:change", ig.load
