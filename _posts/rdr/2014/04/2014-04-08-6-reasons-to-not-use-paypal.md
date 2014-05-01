@@ -2,7 +2,7 @@
 layout:     post
 title:      6 Reasons To Not Use Paypal to Collect Donations
 date:       2014-04-07 09:00:00
-tags:       Pricing Paypal Comparison
+tags:       Pricing Paypal Comparison Charities
 author:     rdr
 location:   Cole Harbour, NS
 img:        /assets/imgs/posts/2014/04/paypal-security-breach.png

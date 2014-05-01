@@ -2,7 +2,7 @@
 layout:     post
 title:      Online Donations. Simplified.
 date:       2014-04-05 09:00:00
-tags:       Feature 
+tags:       Feature Charities
 author:     rdr
 location:   Cole Harbour, NS
 ---
