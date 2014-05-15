@@ -69,19 +69,6 @@ img {
   display: block;
   width: 30%;
   margin: 30px 0; }
-.banner[data-banner="home"] .video_placeholder:hover img {
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
-  filter: alpha(opacity=50);
-  -moz-opacity: 0.8;
-  -khtml-opacity: 0.8;
-  opacity: 0.8; }
-.banner[data-banner="home"] .video_placeholder img {
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=95)";
-  filter: alpha(opacity=95);
-  -moz-opacity: 0.6;
-  -khtml-opacity: 0.6;
-  opacity: 0.6;
-  border-radius: 5px; }
 .banner .banner_title {
   font-weight: bold;
   color: #fff;

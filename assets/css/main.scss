@@ -96,25 +96,6 @@ img {
 			display: block;
 			width: 30%;
 			margin: 30px 0;
-			
-			&:hover {
-				img {
-					-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
-				  filter: alpha(opacity=50);
-				  -moz-opacity: 0.8;
-				  -khtml-opacity: 0.8;
-				  opacity: 0.8;
-				}
-			}
-			
-			img {
-				-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=95)";
-			  filter: alpha(opacity=95);
-			  -moz-opacity: 0.6;
-			  -khtml-opacity: 0.6;
-			  opacity: 0.6;
-				border-radius: 5px;
-			}
 		}
 	}
 	
