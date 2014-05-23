@@ -18,6 +18,9 @@ nav_left:
 sass:
   style: :compressed
 nav_right:
+- text: Customers
+  url: /
+  permalink: /#!/customers
 - text: Pricing
   url: /
   permalink: /#!/pricing

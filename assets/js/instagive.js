@@ -1,5 +1,47 @@
 (function() {
   this.ig = {
+    fitLogos: function() {
+      if ($(".logo_wrapper").length) {
+        return $(".logo_wrapper").each(function() {
+          var img, img_height, margin_top, wrapper_height;
+          wrapper_height = $(this).height();
+          img = $(this).find("img");
+          img_height = img.height();
+          margin_top = (wrapper_height - img_height) / 2;
+          return img.css("margin-top", "" + (margin_top - 5) + "px");
+        });
+      }
+    },
+    retrieveOrgs: function() {
+      var no_bgs;
+      if ($("[data-url]").length) {
+        no_bgs = ["faith", "poq"];
+        return $("[data-url]").each(function() {
+          var list, template, url;
+          list = $(this);
+          url = list.data("url");
+          template = list.find(".template").html();
+          return $.get(url, function(orgs) {
+            $.each(orgs, function(index, org) {
+              var li;
+              if (index < 3) {
+                if ($.inArray(org.permalink, no_bgs) > -1) {
+                  org.header = false;
+                }
+                org.public_description = linkify("" + org.public_description);
+                if (org.public_description === "null") {
+                  org.public_description = "";
+                }
+                li = Mustache.render(template, org);
+                return list.append(li);
+              }
+            });
+            ig.fitLogos();
+            return setTimeout(ig.fitLogos, 1000);
+          });
+        });
+      }
+    },
     setSidebarHeight: function() {
       var height;
       if ($(".sidebar").length) {
@@ -98,8 +140,12 @@
 
   $(function() {
     $(window).scroll(ig.scroll);
-    $(window).resize(ig.setPageDimensions(0));
-    return ig.setPageDimensions(700);
+    $(window).resize(function() {
+      ig.setPageDimensions(0);
+      return ig.fitLogos();
+    });
+    ig.setPageDimensions(700);
+    return ig.retrieveOrgs();
   });
 
   document.addEventListener("page:change", ig.load);

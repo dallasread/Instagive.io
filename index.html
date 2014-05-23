@@ -28,16 +28,49 @@ title: Giving Made Easy
   <iframe width="560" height="315" frameborder="0" allowfullscreen class="video"></iframe>
 </div>
 
-<div id="!/process" class="next_pane_prompter">
-  <a href="/#!/process">How does Instagive.io work?<br>&darr;</a>
+<div id="!/customers" class="next_pane_prompter">
+  <a href="/#!/customers">What is Instagive.io?<br>&darr;</a>
 </div>
 
-<div class="banner static white_gray full_width" data-banner="process">
+<div class="banner static full_width" data-banner="customers">
+  <div class="container">
+    <h3 class="banner_title">What is Instagive.io?</h3>
+    <h4>Instagive.io is a customized, mobile-friendly, app-ready giving page for your organization.</h4>
+    <h4>Here are a few of our customers (click on a logo to see their giving page):</h4>
+    <ol class="three_steps" data-url="https://instagive.io/organizations.json">
+      {% raw %}
+      <script type="text/html" class="template">
+        <li>
+          <a href="https://instagive.io/{{ permalink }}/give" target="_blank">
+            <p class="logo_wrapper {{^header}}no_image{{/header}}" {{#header}}style="background: url('{{ header }}') center center;"{{/header}}>
+              <img src="{{ logo }}">
+            </p>
+          </a>
+          
+          <p class="caption">{{ name }}</p>
+          <p class="description">{{{ public_description }}}</p>
+        </li>
+      </script>
+      {% endraw %}
+    </ol>
+    
+    <div class="clear"></div>
+
+    <p class="final_banner_object align_center">
+      <a href="#!/process" class="big orange button">How does it work?</a>
+      <a href="https://instagive.io/organizations/new" class="risk_reversal">Sign me up!</a>
+    </p>
+    
+    <div class="clear"></div>
+  </div>
+</div>
+
+<div id="!/process" class="banner static blue full_width" data-banner="process">
   <div class="container">
     
     <h3 class="banner_title">How Does Instagive.io Work?</h3>
     
-    <ol id="three_steps">
+    <ol class="three_steps">
       <li>
         <img src="/assets/imgs/icons/bulb.png">
         <p class="caption">1. Five-Minute Setup</p>
@@ -58,8 +91,8 @@ title: Giving Made Easy
     <div class="clear"></div>
 
     <p class="final_banner_object align_center">
-      <a href="#!/pricing" class="big orange button">This sounds great... but how much does it cost?</a>
-      <a href="https://instagive.io/organizations/new" class="risk_reversal">I don't care... where do I sign up?</a>
+      <a href="#!/pricing" class="big orange button">How much does it cost?</a>
+      <a href="https://instagive.io/organizations/new" class="risk_reversal">Where do I sign up?</a>
     </p>
     
     <div class="clear"></div>
@@ -335,7 +368,7 @@ title: Giving Made Easy
     <div class="final_banner_object">
       <p>
         <a href="https://instagive.io/organizations/new" class="big orange button float_right">Register Your Organization &nbsp; &nbsp; &rarr;</a>
-        Need more information? Have a peek at <a href="https://instagive.io/resources/InstagiveBrochure.pdf">our PDF brochure</a> or <a href="mailto:dallas@instagive.io">email us</a>.
+        Need more information? Send us an<a href="mailto:dallas@instagive.io">email</a>.
       </p>
     </div>
     
@@ -402,6 +435,7 @@ title: Giving Made Easy
 
     <p class="final_banner_object align_center">
       <a href="https://instagive.io/organizations/new" class="big orange button">Register Your Organization &nbsp; &rarr;</a>
+      <a href="https://instagive.io/organizations/new" class="risk_reversal">Start accepting donations in 5 minutes.</a>
     </p>
     
     <div class="clear"></div>

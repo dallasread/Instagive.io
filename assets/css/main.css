@@ -84,34 +84,51 @@ img {
   line-height: 30px;
   text-align: center;
   margin-bottom: 30px; }
+.banner[data-banner="customers"] {
+  padding: 100px 5% 20px; }
+.banner[data-banner="customers"] .banner_title {
+  color: #333;
+  text-shadow: none; }
+.banner[data-banner="customers"] h4 {
+  text-align: center;
+  font-size: 14px;
+  line-height: 19px;
+  color: #1272ac;
+  margin-bottom: 10px; }
+.banner[data-banner="customers"] .three_steps li a {
+  display: block;
+  font-weight: normal; }
+.banner[data-banner="customers"] .three_steps li a .logo_wrapper {
+  height: 200px;
+  margin-bottom: 20px;
+  border-radius: 7px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); }
+.banner[data-banner="customers"] .three_steps li a .logo_wrapper.no_image {
+  background: #fff; }
+.banner[data-banner="customers"] .three_steps li a .logo_wrapper img {
+  width: auto;
+  max-width: 80%;
+  margin-bottom: 0; }
+.banner[data-banner="customers"] .three_steps li .caption {
+  display: block;
+  width: 100%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap; }
+.banner[data-banner="customers"] .three_steps li .description a {
+  display: inline;
+  font-weight: bold; }
 .banner[data-banner="process"] {
   padding: 100px 5% 20px; }
-.banner[data-banner="process"] .banner_title {
-  color: #1272ac;
-  text-shadow: none; }
-.banner[data-banner="process"] #three_steps li {
-  float: left;
-  width: 33%;
-  padding: 50px 40px 40px;
-  text-align: center; }
-.banner[data-banner="process"] #three_steps li img {
+.banner[data-banner="process"] .three_steps li .caption {
+  color: #fff; }
+.banner[data-banner="process"] .three_steps li .description {
+  color: #ddd; }
+.banner[data-banner="process"] .three_steps li a {
+  color: #fff; }
+.banner[data-banner="process"] .three_steps li img {
   width: 180px;
   margin-bottom: 50px; }
-.banner[data-banner="process"] #three_steps li .caption {
-  text-align: left;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 26px;
-  margin-bottom: 10px;
-  color: #333; }
-.banner[data-banner="process"] #three_steps li .description {
-  text-align: left;
-  font-size: 14px;
-  line-height: 21px;
-  color: #666; }
-.banner[data-banner="process"] #three_steps li a {
-  color: #1272ac;
-  font-weight: bold; }
 .banner[data-banner="process"] .final_banner_object {
   margin-bottom: 100px; }
 .banner[data-banner="pricing"] {
@@ -238,6 +255,27 @@ img {
 .next_pane_prompter a:hover {
   color: rgba(255, 255, 255, 0.7); }
 
+.three_steps li {
+  float: left;
+  width: 33%;
+  padding: 50px 40px 40px;
+  text-align: center; }
+.three_steps li img {
+  width: 180px;
+  margin-bottom: 50px; }
+.three_steps li .caption {
+  text-align: left;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+  margin-bottom: 10px; }
+.three_steps li .description {
+  text-align: left;
+  font-size: 14px;
+  line-height: 21px; }
+.three_steps li a {
+  font-weight: bold; }
+
 #intro_video {
   background: #111;
   background: rgba(0, 0, 0, 0.9);
@@ -298,6 +336,8 @@ img {
   background: -o-linear-gradient(#489dce, #1272ac);
   background: -ms-linear-gradient(#489dce, #1272ac);
   background: linear-gradient(#489dce, #1272ac); }
+.blue .risk_reversal {
+  color: #ddd !important; }
 
 .gray {
   background: #aaa;
@@ -657,7 +697,7 @@ a.button, .button {
   .banner .banner_subtitle {
     font-size: 18px;
     line-height: 24px; }
-  .banner[data-banner="process"] #three_steps li {
+  .banner[data-banner="process"] .three_steps li {
     padding: 0px 20px; }
   .banner[data-banner="home"] h1, .banner[data-banner="home"] h2, .banner[data-banner="home"] p {
     width: auto; }
@@ -672,11 +712,14 @@ a.button, .button {
 
   .next_pane_prompter {
     visibility: hidden; } }
+.template {
+  display: none; }
+
 @media screen and (min-width: 600px) {
   #logo a {
     padding: 12px 28px; } }
 @media screen and (max-width: 600px) {
-  .topbar .nav a[href="/#!/pricing"], .topbar .nav a[href="/#!/faqs"] {
+  .topbar .nav a[href="/#!/pricing"], .topbar .nav a[href="/#!/faqs"], .topbar .nav a[href="/#!/customers"] {
     display: none; }
 
   #logo a {
@@ -723,11 +766,12 @@ a.button, .button {
   #page .content {
     padding: 20px; }
 
-  .banner[data-banner="process"] #three_steps li {
+  .three_steps li {
     display: block;
     float: none;
     width: 100%;
     padding: 0px 0px 50px; }
+
   .banner[data-banner="home"] .video_placeholder {
     width: 100%;
     text-align: left; }

@@ -2,6 +2,36 @@
 ---
 
 @ig =
+	fitLogos: ->
+		if $(".logo_wrapper").length
+			$(".logo_wrapper").each ->
+				wrapper_height = $(this).height()
+				img = $(this).find("img")
+				img_height = img.height()
+				margin_top = (wrapper_height - img_height) / 2
+				img.css "margin-top", "#{margin_top - 5}px"
+		
+	retrieveOrgs: ->
+		if $("[data-url]").length
+			no_bgs = ["faith", "poq"]
+			
+			$("[data-url]").each ->
+				list = $(this)
+				url = list.data("url")
+				template = list.find(".template").html()
+
+				$.get url, (orgs) ->
+					$.each orgs, (index, org) ->
+						if index < 3
+							org.header = false if $.inArray(org.permalink, no_bgs) > -1
+							org.public_description = linkify "#{org.public_description}"
+							org.public_description = "" if org.public_description == "null"
+							li = Mustache.render template, org
+							list.append li
+					
+					ig.fitLogos()
+					setTimeout ig.fitLogos, 1000
+
 	setSidebarHeight: ->
 		if $(".sidebar").length
 			height = $(".yield").height() + 60
@@ -80,7 +110,12 @@ $(document).on
 
 $ ->
 	$(window).scroll ig.scroll
-	$(window).resize ig.setPageDimensions(0)
+	
+	$(window).resize ->
+		ig.setPageDimensions(0)
+		ig.fitLogos()
+
 	ig.setPageDimensions 700
+	ig.retrieveOrgs()
 
 document.addEventListener "page:change", ig.load
