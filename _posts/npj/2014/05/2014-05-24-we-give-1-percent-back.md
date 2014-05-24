@@ -2,7 +2,7 @@
 layout:     post
 title:      We Give 1% Back
 date:       2014-05-24 09:00:00
-tags:       Charity Instagive
+tags:       Charity Instagive Mission
 author:     npj
 location:   Ottawa, ON
 img:        /assets/imgs/posts/2014/05/world.jpg
