@@ -299,6 +299,11 @@ img {
   height: 315px;
   z-index: 81; }
 
+#give_back {
+  position: absolute;
+  top: 63px;
+  left: 0; }
+
 .white {
   background: #fff; }
 
