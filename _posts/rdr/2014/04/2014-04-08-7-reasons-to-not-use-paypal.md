@@ -1,7 +1,7 @@
 ---
 layout:     post
-title:      6 Reasons To Not Use Paypal to Collect Donations
-date:       2014-04-07 09:00:00
+title:      7 Reasons To Not Use Paypal to Collect Donations
+date:       2014-04-08 09:00:00
 tags:       Pricing Paypal Comparison Charities
 author:     rdr
 location:   Cole Harbour, NS
@@ -38,17 +38,21 @@ According to Paypal.com, signing up for Paypal to receive donations as a registe
 
 To compare, if you [sign up](https://instagive.io/organizations/new) for Instagive.io now, you'd probably be done before you finished reading this article.
 
-#### 4. An antiquated button
+#### 4. Extra Administrative Work
+
+When someone donates to your cause, it should be seamless to receive it into your bank account. Using Paypal, every time someone donates, you need to log in to your Paypal account and withdraw the funds. This can be extremely tedious and annoying. What's more? Once Paypal's fees are applied, it's nearly impossible to reconcile the records. When you receive donations with Instagive.io, the money goes directly to your account without you doing any extra steps (all payments are held 7 days).
+
+#### 5. An antiquated button
 
 Perhaps its just me, but people seem to shutter when they see a Paypal "Donate Now" button. This is probably because the graphic was designed in 2007 - the web and it's constraints have come a long way since then. Maybe it has something to do with its history of security breaches?
 
-#### 5. You still need your own infrastructure
+#### 6. You still need your own infrastructure
 
 Above all, you don't want donations to your organization retracted because of its Paypal landing page. So, you'll need to hire a developer and designer to build a custom giving application on your website. To receive payments online, an [SSL Certificate](https://www.symantec.com/verisign/ssl-certificates){:target="_blank"} is required. You'll also need to make sure you're [PCI Compliant](https://www.pcisecuritystandards.org){:target="_blank"}. You'll need to perform [cross-browser](https://www.pcisecuritystandards.org){:target="_blank", [compatibility ](https://en.wikipedia.org/wiki/Software_testing#Compatibility_testing){:target="_blank"}, [load](https://en.wikipedia.org/wiki/Load_testing#Software_load_testing){:target="_blank"} [unit](https://en.wikipedia.org/wiki/Software_testing#Unit_testing){:target="_blank"}, [integration](https://en.wikipedia.org/wiki/Software_testing#Integration_testing){:target="_blank"}, [usability](https://en.wikipedia.org/wiki/Software_testing#Usability_testing){:target="_blank"}, and [acceptance](https://en.wikipedia.org/wiki/Software_testing#Acceptance_testing){:target="_blank"} tests (there's more too!).
 
 A simple giving application, while it looks simple to build, easily requires thousands of decisions to be made, secured, and tested. For a small-to-mid-sized organization, it isn't practical. For a larger organization, it makes more sense to leave their payments systems to the payment systems experts &mdash; and focus on the core of their business.
 
-#### 6. Inability to give quickly during live events
+#### 7. Inability to give quickly during live events
 
 Paypal doesn't offer a "Quick Give" option for those who don't have (and don't want) a Paypal account. It's even worse if you've forgotten the password to log in.
 
