@@ -89,6 +89,7 @@
 	load: ->
 		ig.setPageDimensions 500
 		ig.setPricingHeader 0
+		ig.retrieveOrgs()
 
 $(document).on "click", ".show_intro_video", ->
 	$("iframe").attr "src", "//www.youtube.com/embed/i6kkuq5_RtM?theme=light&showinfo=0&autoplay=1"
@@ -116,6 +117,5 @@ $ ->
 		ig.fitLogos()
 
 	ig.setPageDimensions 700
-	ig.retrieveOrgs()
 
 document.addEventListener "page:change", ig.load
