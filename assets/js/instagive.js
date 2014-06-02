@@ -111,7 +111,8 @@
     },
     load: function() {
       ig.setPageDimensions(500);
-      return ig.setPricingHeader(0);
+      ig.setPricingHeader(0);
+      return ig.retrieveOrgs();
     }
   };
 
@@ -144,8 +145,7 @@
       ig.setPageDimensions(0);
       return ig.fitLogos();
     });
-    ig.setPageDimensions(700);
-    return ig.retrieveOrgs();
+    return ig.setPageDimensions(700);
   });
 
   document.addEventListener("page:change", ig.load);
