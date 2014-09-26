@@ -202,7 +202,7 @@ img {
 	}
 	
 	&[data-banner="pricing"] {
-		padding: 100px 10% 20px;
+		padding: 100px 20% 20px;
 		
 		.description {
 			color: #fff;
@@ -272,8 +272,9 @@ img {
 				color: #333;
 				
 				&.highlight {
-					color: #208C0C;
+					color: #2BBE0F;
 					font-weight: bold;
+					font-size: 105%;
 				}
 				
 				&.trait {
@@ -311,12 +312,24 @@ img {
 					margin: -10px auto;
 				}
 				
+				&.price {
+					font-weight: bold;
+					font-size: 32px;
+					line-height: 32px;
+					color: #489dce;
+				}
+				
+				&.transactions {
+					font-size: 21px;
+					line-height: 21px;					
+				}
+				
 				&.provider {
-					width: 13%;
+					width: 22%;
 				}
 				
 				&.descriptor {
-					width: 22.5%;
+					width: 34%;
 				}
 			}
 		}	

@@ -37,7 +37,7 @@ title: Giving Made Easy
     <h3 class="banner_title">What is Instagive.io?</h3>
     <h4>Instagive.io is a customized, mobile-friendly, app-ready giving page for your organization.</h4>
     <h4>Here are a few of our customers (click on a logo to see their giving page):</h4>
-    <ol class="three_steps" data-url="https://instagive.io/organizations.json">
+    <ol class="three_steps">
       {% raw %}
       <script type="text/html" class="template">
         <li>
@@ -84,7 +84,7 @@ title: Giving Made Easy
       <li>
         <img src="/assets/imgs/icons/safe.png">
         <p class="caption">3. Get Paid</p>
-        <p class="description">Once you've received a few donations, you'll want to cash in. To withdraw your donations, you need to do absolutely nothing. We hold all donations for 7 days, then deposit them directly into your bank account.</p>
+        <p class="description">Once you've received a few donations, you'll want to cash in. To withdraw your donations, you need to do absolutely nothing. Our payment processor holds donations for 2 days (7 days for Canadian accounts), then deposit them directly into your bank account.</p>
       </li>
     </ol>
     
@@ -99,18 +99,22 @@ title: Giving Made Easy
   </div>
 </div>
 
-<div id="!/pricing" class="banner static dark_gray full_width" data-banner="pricing">
+<div class="banner static dark_gray full_width" data-banner="pricing">
   <div class="container">
     
-    <h3 class="banner_title">How Much Does Instagive.io Cost?</h3>
+    <h3 class="banner_title">How much does Instagive.io cost?</h3>
     
     <h4 class="banner_subtitle">
-      Pay-as-you-grow. No setup, monthly, or chargeback fees.
+      Pay-as-you-grow. No setup or chargeback fees.
     </h4>
     
     <p class="description">
-      We frequently get asked how our pricing stacks up against our "competitors". In truth, it's usually like comparing apples and oranges. Versus Square and Paypal, our offering is completely different &mdash; they are a card processor for merchant transactions. Instagive.io is a layer on top of credit/debit card processing. We've saved you the work of comparing their features and prices &mdash; see for yourself:
+      We frequently get asked how our pricing stacks up against our "competitors". In truth, it's usually like comparing apples and oranges. Versus Square and Paypal, our offering is completely different &mdash; they are a card processor for merchant transactions. Instagive.io is a layer on top of credit/debit card processing.
     </p>
+		
+		<p class="description">
+			We have 3 different plans to choose from, based on how many transactions you process:
+		</p>
     
     <div id="pricing_placeholder"></div>
     
@@ -119,27 +123,63 @@ title: Giving Made Easy
         <tr>
           <th class="descriptor gray"></th>
           <th class="provider gray">
-            <p class="name">Paypal</p>
+            <p class="name">Basic</p>
           </th>
           <th class="provider gray">
-            <p class="name">Square</p>
+            <p class="name">Deluxe</p>
           </th>
           <th class="provider gray">
-            <p class="name">QGiv</p>
-          </th>
-          <th class="provider gray">
-            <p class="name">SecureGive</p>
-          </th>
-          <th class="provider gray">
-            <p class="name">MoonClerk</p>
-          </th>
-          <th class="provider blue">
-            <p class="name">Instagive.io</p>
+            <p class="name">Pro</p>
           </th>
         </tr>
       </thead>
       
       <tbody>
+        <tr>
+          <td class="trait">
+            <p class="name">Monthly Fee</p>
+            <p class="description">Pay-as-you-go</p>
+          </td>
+          <td class="price">$9</td>
+          <td class="price">$19</td>
+          <td class="price">$39</td>
+        </tr>
+        <tr>
+          <td class="trait">
+            <p class="name">Transactions</p>
+            <p class="description">Number of transactions that are included in the plan</p>
+          </td>
+          <td class="transactions">50</td>
+          <td class="transactions">250</td>
+          <td class="transactions">1,000</td>
+        </tr>
+        <tr>
+          <td class="trait">
+            <p class="name">Percentage Fee</p>
+            <p class="description">What is the per-transaction percentage?</p>
+          </td>
+          <td>2.9%</td>
+          <td>2.9%</td>
+          <td>2.9%</td>
+        </tr>
+        <tr>
+          <td class="trait">
+            <p class="name">Per Transaction Fee</p>
+            <p class="description">What is the per-transaction charge?</p>
+          </td>
+          <td>$0.30</td>
+          <td>$0.30</td>
+          <td>$0.30</td>
+        </tr>
+        <tr>
+          <td class="trait">
+            <p class="name">How much is mine?</p>
+            <p class="description">Our average donation is around $75, but every organization will be different.</p>
+          </td>
+          <td>A $100 donation means $96.80 dollars in your account within 2 days (7 days in Canada).</td>
+          <td>A $100 donation means $96.80 dollars in your account within 2 days (7 days in Canada).</td>
+          <td>A $100 donation means $96.80 dollars in your account within 2 days (7 days in Canada).</td>
+        </tr>
         <tr>
           <td class="trait">
             <p class="name">Recurring Transactions</p>
@@ -148,11 +188,8 @@ title: Giving Made Easy
           <td><img src="/assets/imgs/check.png"></td>
           <td><img src="/assets/imgs/check.png"></td>
           <td><img src="/assets/imgs/check.png"></td>
-          <td><img src="/assets/imgs/check.png"></td>
-          <td><img src="/assets/imgs/check.png"></td>
-          <td><img src="/assets/imgs/check.png"></td>
         </tr>
-        <!--<tr>
+        <tr>
           <td class="trait">
             <p class="name">Mobile-Friendly</p>
             <p class="description">Can your donors give easily from their smart phone?</p>
@@ -160,20 +197,14 @@ title: Giving Made Easy
           <td><img src="/assets/imgs/check.png"></td>
           <td><img src="/assets/imgs/check.png"></td>
           <td><img src="/assets/imgs/check.png"></td>
-          <td><img src="/assets/imgs/check.png"></td>
-          <td><img src="/assets/imgs/check.png"></td>
-          <td><img src="/assets/imgs/check.png"></td>
-        </tr>-->
+        </tr>
         <tr>
           <td class="trait">
             <p class="name">Installable App</p>
-            <p class="description">Do they provide an app?</p>
+            <p class="description">Can your donors install your own customized app?</p>
           </td>
           <td><img src="/assets/imgs/check.png"></td>
           <td><img src="/assets/imgs/check.png"></td>
-          <td><img src="/assets/imgs/check.png"></td>
-          <td></td>
-          <td></td>
           <td><img src="/assets/imgs/check.png"></td>
         </tr>
         <tr>
@@ -181,9 +212,6 @@ title: Giving Made Easy
             <p class="name">Intuitive Admin Panel</p>
             <p class="description">Is it easy to filter, sort, and payments for a specific time period or donor?</p>
           </td>
-          <td></td>
-          <td><img src="/assets/imgs/check.png"></td>
-          <td><img src="/assets/imgs/check.png"></td>
           <td><img src="/assets/imgs/check.png"></td>
           <td><img src="/assets/imgs/check.png"></td>
           <td><img src="/assets/imgs/check.png"></td>
@@ -193,59 +221,35 @@ title: Giving Made Easy
             <p class="name">Live Events</p>
             <p class="description">Can someone give in less than one minute?</p>
           </td>
-          <td></td>
-          <td></td>
-          <td><img src="/assets/imgs/check.png"></td>
           <td><img src="/assets/imgs/check.png"></td>
           <td><img src="/assets/imgs/check.png"></td>
           <td><img src="/assets/imgs/check.png"></td>
         </tr>
         <tr>
           <td class="trait descriptor">
-            <p class="name">Anonymous Giving</p>
-            <p class="description">Do users have to sign up?</p>
+            <p class="name">One-Time Giving</p>
+            <p class="description">Can users give without signing up?</p>
           </td>
-          <td></td>
-          <td></td>
-          <td></td>
           <td><img src="/assets/imgs/check.png"></td>
-          <td></td>
           <td><img src="/assets/imgs/check.png"></td>
-        </tr>
-        <tr>
-          <td class="trait descriptor">
-            <p class="name">Brandable App</p>
-            <p class="description">Is the app brandable?</p>
-          </td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
           <td><img src="/assets/imgs/check.png"></td>
         </tr>
         <tr>
           <td class="trait descriptor">
             <p class="name">Automatic Tax Receipts</p>
-            <p class="description">Do they automatically send official tax receipts to your donors? Can they be re-issued?</p>
+            <p class="description">Are offical tax receipt issued automatically at the beginning of the year? Can they be re-issued?</p>
           </td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
+          <td><img src="/assets/imgs/check.png"></td>
+          <td><img src="/assets/imgs/check.png"></td>
           <td><img src="/assets/imgs/check.png"></td>
         </tr>
         <tr>
           <td class="trait">
             <p class="name">Customer Service</p>
-            <p class="description">Are they reachable? Are they helpful? Are they local? Is it free?</p>
+            <p class="description">You can contact us any time via <a href="mailto:dallas@instagive.io">email</a>.</p>
           </td>
-          <td>?</td>
-          <td>?</td>
-          <td>?</td>
-          <td>?</td>
-          <td>?</td>
+          <td><img src="/assets/imgs/check.png"></td>
+          <td><img src="/assets/imgs/check.png"></td>
           <td><img src="/assets/imgs/check.png"></td>
         </tr>
         <tr>
@@ -253,34 +257,16 @@ title: Giving Made Easy
             <p class="name">Payment Cycle</p>
             <p class="description">How often are you paid?</p>
           </td>
-          <td>1 business day</td>
-          <td>2 business days</td>
-          <td>1 business day</td>
-          <td>1 business day</td>
-          <td>7 days</td>
-          <td>7 day rolling basis</td>
-        </tr>
-        <tr>
-          <td class="trait">
-            <p class="name">Time-To-Donate</p>
-            <p class="description">How fast can someone donate to your cause?</p>
-          </td>
-          <td>5 minutes</td>
-          <td>N/A</td>
-          <td>45 seconds</td>
-          <td>45 seconds</td>
-          <td>45 seconds</td>
-          <td>45 seconds</td>
+          <td>2 day rolling basis (7 days in Canada)</td>
+          <td>2 day rolling basis (7 days in Canada)</td>
+          <td>2 day rolling basis (7 days in Canada)</td>
         </tr>
         <tr>
           <td class="trait">
             <p class="name">Time-To-Register</p>
             <p class="description">How long of a sign up process to start receiving donations?</p>
           </td>
-          <td>7-10 days</td>
           <td>5 minutes</td>
-          <td>24 Hours</td>
-          <td>24 Hours</td>
           <td>5 minutes</td>
           <td>5 minutes</td>
         </tr>
@@ -289,80 +275,24 @@ title: Giving Made Easy
             <p class="name">Chargebacks</p>
             <p class="description">How much if someone disputes a transaction?</p>
           </td>
-          <td>$15</td>
           <td class="highlight">Free</td>
           <td class="highlight">Free</td>
-          <td class="highlight">Free</td>
-          <td class="highlight">Free</td>
-          <td class="highlight">Free</td>
-        </tr>
-        <tr>
-          <td class="trait">
-            <p class="name">Monthly Fee</p>
-            <p class="description">How much do they charge monthly to use their service?</p>
-          </td>
-          <td>$35</td>
-          <td class="highlight">Free</td>
-          <td class="highlight">Free</td>
-          <td>$49 + $15</td>
-          <td>$30 Avg</td>
           <td class="highlight">Free</td>
         </tr>
         <tr>
           <td class="trait">
             <p class="name">Setup Fee</p>
-            <p class="description">Do they charge you to set up their service?</p>
+            <p class="description">Is there a fee to set up my giving app?</p>
           </td>
-          <td class="highlight">Free</td>
-          <td class="highlight">Free</td>
-          <td>$99</td>
-          <td>$199</td>
-          <td class="highlight">Free</td>
-          <td class="highlight">Free</td>
-        </tr>
-        <tr>
-          <td class="trait">
-            <p class="name">Per Transaction Fee</p>
-            <p class="description">How much do they charge on a per transaction basis?</p>
-          </td>
-          <td>$0.30</td>
-          <td>$0.15</td>
-          <td>$0.25</td>
-          <td>$0.00</td>
-          <td>$0.30</td>
-          <td>$0.60</td>
-        </tr>
-        <tr>
-          <td class="trait">
-            <p class="name">Percentage Fee</p>
-            <p class="description">What is their per-transaction percentage?</p>
-          </td>
-          <td>2.9%*</td>
-          <td>3.5%</td>
-          <td>3.95%</td>
-          <td>1.7%</td>
-          <td>2.9%</td>
-          <td>3.9%</td>
-        </tr>
-        <tr>
-          <td class="trait">
-            <p class="name">Details</p>
-            <p class="description"></p>
-          </td>
-          <td>
-            Registered charities can receive a rate of 1.9%.
-          </td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
+          <td class="highlight">Free with custom branding included!</td>
+          <td class="highlight">Free with custom branding included!</td>
+          <td class="highlight">Free with custom branding included!</td>
         </tr>
       </tbody>
     </table>
     
     <p class="table_footnote">
-      Canadian prices, manual entry prices instead of per swipe prices, and equivalent products and services.
+      All prices are USD. <a href="https://instagive.io/organizations/new">We also offer a free plan at 3.9% + $.60 per transation.
     </p>
 
     <div class="final_banner_object">
@@ -375,7 +305,6 @@ title: Giving Made Easy
     <div class="clear"></div>
   </div>
 </div>
-
 
 <div id="!/faqs" class="banner static blue full_width" data-banner="faqs">
   <div class="container">
