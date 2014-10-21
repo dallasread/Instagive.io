@@ -1,20 +1,6 @@
 name: Instagive.io
-markdown: kramdown
 permalink: /:year/:month/:title
 future: false
-nav_left:
-# - text: For Organizations
-#   url: /organizations/index.html
-#   permalink: /organizations
-# - text: For Givers
-#   url: /givers/index.html
-#   permalink: /givers
-# - text: Customers
-#   url: /customers/index.html
-#   permalink: /customers
-# - text: Tour
-#   url: /tour/index.html
-#   permalink: /tour
 sass:
   style: :compressed
 nav_right:
@@ -44,3 +30,16 @@ authors:
     position: Co-Founder
     plus: 111785943133849515777
     initials: npj
+nav_left:
+# - text: For Organizations
+#   url: /organizations/index.html
+#   permalink: /organizations
+# - text: For Givers
+#   url: /givers/index.html
+#   permalink: /givers
+# - text: Customers
+#   url: /customers/index.html
+#   permalink: /customers
+# - text: Tour
+#   url: /tour/index.html
+#   permalink: /tour
