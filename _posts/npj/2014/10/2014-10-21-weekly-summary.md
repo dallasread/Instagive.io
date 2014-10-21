@@ -20,6 +20,8 @@ You can turn on Weekly Summary in the settings section of the admin profile. If 
 
 In order to get a more in depth report you can log in to the admin profile, click "Filter" on your "Reports" page and view giving information via cause, date and user. After selecting the information you can then proceed to download it as a PDF or CSV file. 
 
+**We have also added a "Successful Donation" email which you can enable (disabled by default). This will send you an email every time you receive a donation!**
+
 The Weekly Summary update is brought to you via customer feedback. We are glad that we have the opportunity to keep making Instagive.io into a company that better serves your needs.
 
 Look out for more updates in the coming days! 
